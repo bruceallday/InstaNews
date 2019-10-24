@@ -1,3 +1,8 @@
+/*
+    Layout: containes all the css that handles the layout,
+    such at the container and any grid system
+*/
+
 @font-face {
     font-family: 'Open-Sans-bold-italic';
     src: url('OpenSans-BoldItalic.ttf') format('truetype');
@@ -57,8 +62,8 @@ html{
 
 body{
     height: 100%;
-    background-color: black;
     display: flex;
+    background-color: black;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
@@ -67,9 +72,9 @@ body{
 header{
     width: 100%;
     height: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
     background: url("/images/nyt-logo.svg");
     background-size: 50%;
     background-position: center;
@@ -88,10 +93,9 @@ section{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    background: blue;
     background-size: 100%;
-    height:auto;
-    width:100%;
+    height: auto;
+    width: 100%;
     /* padding: 10px; */
 }
 
@@ -131,3 +135,32 @@ footer{
 
 
 
+// .main-navigation{
+//     font-size: 12px;
+//     ul{
+//         font-size: 12px;
+//         li{
+//             //use the and stamp top append the behaviour to the li on hover.
+//             &:hover{
+//                 font-size:2em;
+//             }
+//         }
+//     }
+// }
+
+
+// Media quierys 
+// @mixin desktop{
+//     @media (min-width: 1024px){
+//         @content;
+//     }
+// }
+
+//Add it to the item you want ot change instead of creating a new query at the bottomon the page.
+
+// body{
+//     background: purple;
+//     @include desktop{
+//         background: green;
+//     }
+// }

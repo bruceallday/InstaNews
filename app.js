@@ -12,10 +12,9 @@ $(function(){
                     console.log(value)
                     $("main").append(`
                     <section style="background-image: url(${value.multimedia[4].url});">
-                    <div class="abstract">
-                        <p>${value.abstract}</p>
-                    </div>
-                        
+                        <div class="abstract">
+                            <p>${value.abstract}</p>
+                        </div>
                     </section>`)
                 })
             })
