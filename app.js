@@ -11,7 +11,7 @@ $(function(){
                     console.log(key)
                     console.log(value)
                     $("main").append(`
-                    <section style="background-image: url(${value.multimedia[0].url});">
+                    <section style="background-image: url(${value.multimedia[4].url});">
                     <div class="abstract">
                         <p>${value.abstract}</p>
                     </div>
