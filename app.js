@@ -7,15 +7,19 @@ $(function(){
             .done(function(data){
                 console.log(data)
                 $("section").remove();
+                let arrLength = 0;
                 $.each(data.results, function(key, value){
-                    console.log(key)
-                    console.log(value)
-                    $("main").append(`
-                    <section style="background-image: url(${value.multimedia[4].url});">
-                        <div class="abstract">
-                            <p>${value.abstract}</p>
-                        </div>
-                    </section>`)
+                    if(data.results[key].multimedia.length !==0 && arrLength<12){
+                        arrLength ++;
+                        console.log(key)
+                        console.log(value)
+                        $("main").append(`
+                                    <section style="background-image: url(${value.multimedia[4].url});">
+                                        <div class="abstract">
+                                            <p>${value.abstract}</p>
+                                        </div>
+                                    </section>`)
+                    }
                 })
             })
         })

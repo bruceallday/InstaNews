@@ -1,122 +1,3 @@
-/*
-    Base: contained within this file is your resets,
-    variables, mixins, and any utility classes
-*/
-/*
-    Layout: containes all the css that handles the layout,
-    such at the container and any grid system
-*/
-@font-face {
-  font-family: "Open-Sans-bold-italic";
-  src: url("OpenSans-BoldItalic.ttf") format("truetype");
-  font-weight: bold;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Open-Sans-Light";
-  src: url("/fonts/OpenSans-Light.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Open-Sans-Light-Italic";
-  src: url("OpenSansLight-Italic.ttf") format("truetype");
-  font-weight: 300;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Open-Sans-Bold";
-  src: url("OpenSans-Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-}
-.openSansLight {
-  font-family: "Open-Sans-Light";
-}
-
-.fontSize {
-  font-size: 16px;
-}
-
-.baseFontColor {
-  color: #ffffff;
-}
-
-.footerColor {
-  color: #c2c2c2;
-}
-
-.fontWhite {
-  color: white;
-}
-
-.cSelf {
-  padding: 10px;
-  align-self: center;
-}
-
-html {
-  height: 100%;
-}
-
-body {
-  height: 100%;
-  display: flex;
-  background-color: black;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-
-header {
-  width: 100%;
-  height: 50%;
-  background: url("/images/nyt-logo.svg");
-  background-size: 50%;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-main {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  background-size: 100%;
-  height: auto;
-  width: 100%;
-  /* padding: 10px; */
-}
-
-.abstract {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-  padding: 10px;
-}
-
-select {
-  background: white;
-  align-self: center;
-  width: 38%;
-}
-
-footer {
-  width: 100%;
-  height: 10%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-/*
-    Component: anything reuseable such as buttons, navbars, cards etc
-*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -170,5 +51,115 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+/*
+    Base: contained within this file is your resets,
+    variables, mixins, and any utility classes
+*/
+/*
+    Layout: containes all the css that handles the layout,
+    such at the container and any grid system
+*/
+@font-face {
+  font-family: "Open-Sans-bold-italic";
+  src: url("OpenSans-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Open-Sans-Light";
+  src: url("/fonts/OpenSans-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open-Sans-Light-Italic";
+  src: url("OpenSansLight-Italic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Open-Sans-Bold";
+  src: url("OpenSans-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header {
+  width: 100%;
+  height: 50%;
+  background: url("/images/nyt-logo.svg");
+  background-size: 30%;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+header p {
+  padding: 10px;
+  font-size: 16px;
+  font-family: "Open-Sans-Light";
+  color: #ffffff;
+  text-align: center;
+}
+header select {
+  align-self: center;
+  background-color: #ffffff;
+  width: 40%;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  height: 250px;
+  width: 100%;
+  justify-content: flex-end;
+}
+section .abstract {
+  align-self: flex-end;
+  font-size: 16px;
+  font-family: "Open-Sans-Light";
+  color: #ffffff;
+  padding: 10px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+footer {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+footer p {
+  color: #c2c2c2;
+  font-size: 16px;
+  font-family: "Open-Sans-Light";
+  text-align: center;
+}
+
+/*
+    Component: anything reuseable such as buttons, navbars, cards etc
+*/
 
 /*# sourceMappingURL=style.css.map */
