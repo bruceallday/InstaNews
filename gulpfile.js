@@ -4,17 +4,25 @@ const terser = require("gulp-terser"),
 rename = require("gulp-rename"),
 sass = require("gulp-sass"),
 autoprefixer = require("gulp-autoprefixer"),
-cssnano = require("gulp-cssnano")
+cssnano = require("gulp-cssnano"),
+
+sourcemaps = require("gulp-sourcemaps"),
+eslint = require("gulp-eslint"),
+browserSync = require("browser-sync")
 
 gulp.task("sass", function(){
     return gulp
-    .src("./sass/style.scss")
+    .src("./sass/style.scss", {sourcemaps:true})
+    .pipe(sourcemaps.init())
     .pipe(sass())
-
+    .pipe(
+        autoprefixer(),
+    )
     .pipe(gulp.dest("./build/css"))
     .pipe(cssnano())
     .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("./build/css"))
+    .pipe(sourcemaps.write("../maps"))
+    .pipe(gulp.dest("./build/css/"))
 
     
 })
