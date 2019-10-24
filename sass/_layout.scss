@@ -49,11 +49,11 @@ $footer-font-color: #c2c2c2;
 $font-size: 16px;
 
 html{
-    height: 100%;
+    height: 100vh;
 }
 
 body{
-    height: 100%;
+    height: 100vh;
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -62,16 +62,13 @@ body{
 }
 
 header{
-    // position: absolute;
     width: 100%;
-    height: 50%;
-    background: url("/images/nyt-logo.svg");
-    background-size: 30%;
-    background-position: center;
-    background-repeat: no-repeat;
+    height: 50vh;
+    background-size: 50%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    margin-bottom: 20px;
     p{
         padding: 10px;
         font-size: $font-size;
@@ -96,7 +93,7 @@ section{
     display: flex;
     flex-direction: column;
     background-size: cover;
-    height:250px;
+    height:50vh;
     width:100%;
     justify-content: flex-end;
     .abstract{
