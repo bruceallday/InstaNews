@@ -13,13 +13,16 @@ $(function(){
                         arrLength ++;
                         console.log(key)
                         console.log(value)
-                        $("main").append(`
+                        
+                        const section = (`
                                             <section style="background-image: url(${value.multimedia[4].url});">
                                                 <div class="abstract">
                                                     <p>${value.abstract}</p>
                                                 </div>
-                                            </section>`)
-                    }
+                                            </section>`);
+
+                        $("main").append(section).hide().fadeIn(1000)
+                    } 
                 })
             })
         })
