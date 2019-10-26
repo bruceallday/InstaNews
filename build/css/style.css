@@ -112,6 +112,20 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 20px; }
+  @media (min-width: 600px) {
+    header {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; } }
+  @media (min-width: 1240px) {
+    header {
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start; } }
   header div {
     display: -webkit-box;
     display: -ms-flexbox;

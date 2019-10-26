@@ -2,7 +2,6 @@ $(function(){
     $(function(){
         $("select").on("change", function(event){
             $selection = $(event.target).val()
-            // console.log($selection);
             $.getJSON(`https://api.nytimes.com/svc/topstories/v2/${$selection}.json?api-key=WU7IFUdwRwP8g4fBGiav2zqEpSm6VlfG`)
             .done(function(data){
                 console.log(data)

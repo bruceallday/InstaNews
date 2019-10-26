@@ -62,7 +62,14 @@ body{
 }
 
 header{
+    @include tablet{
+            display: flex;
+            flex-direction: row;
+        }
 
+    @include desktop{
+        justify-content: flex-start;
+    }
     width: 100%;
     height: 50vh;
     background-size: 50%;
@@ -72,6 +79,9 @@ header{
     margin-bottom: 20px;
 
     div{
+        @include tablet{
+
+        }
         display: flex;
         flex-direction: column;
         justify-content: center;
