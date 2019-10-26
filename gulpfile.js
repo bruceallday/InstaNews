@@ -1,6 +1,6 @@
 const gulp = require('gulp');
-
 const terser = require("gulp-terser"),
+
 rename = require("gulp-rename"),
 sass = require("gulp-sass"),
 autoprefixer = require("gulp-autoprefixer"),
