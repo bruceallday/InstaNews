@@ -14,7 +14,7 @@ $(function(){
                         console.log(value)
                         
                         const section = (`
-                                            <section style="background-image: url(${value.multimedia[4].url});">
+                                            <section class="newsSection" style="background-image: url(${value.multimedia[4].url});">
                                                 <div class="abstract">
                                                     <p>${value.abstract}</p>
                                                 </div>

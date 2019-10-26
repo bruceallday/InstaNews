@@ -100,7 +100,6 @@ header{
 
     }
 
-   
     select{
         align-self: center;
         background-color: $base-font-color;
@@ -109,6 +108,15 @@ header{
 }
 
 main{
+    @include tablet{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    @include desktop{
+        grid-template-columns: auto auto auto auto;
+
+    }
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -143,6 +151,11 @@ footer{
         font-family: $font-family;
         text-align: center;
     }
+}
+
+img{
+    // width: 50px;
+    // height: 50px;
 }
 
 // .main-navigation{
