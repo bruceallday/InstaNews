@@ -79,9 +79,7 @@ header{
     margin-bottom: 20px;
 
     div{
-        @include tablet{
 
-        }
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -93,9 +91,7 @@ header{
             text-align: center;
         }
         select{
-            // align-self: center;
             background-color: $base-font-color;
-            // width: 150px;
         }
 
     }
@@ -123,9 +119,14 @@ main{
 }
 
 section{
+    @include tablet{
+        background-position: center;
+        background-size: cover;
+    }
     display: flex;
     flex-direction: column;
     background-size: cover;
+    background-position: center;
     height: 50vh;
     width: 100%;
     justify-content: flex-end;
@@ -152,38 +153,3 @@ footer{
         text-align: center;
     }
 }
-
-img{
-    // width: 50px;
-    // height: 50px;
-}
-
-// .main-navigation{
-//     font-size: 12px;
-//     ul{
-//         font-size: 12px;
-//         li{
-//             //use the and stamp top append the behaviour to the li on hover.
-//             &:hover{
-//                 font-size:2em;
-//             }
-//         }
-//     }
-// }
-
-
-// Media quierys 
-// @mixin desktop{
-//     @media (min-width: 1024px){
-//         @content;
-//     }
-// }
-
-//Add it to the item you want ot change instead of creating a new query at the bottomon the page.
-
-// body{
-//     background: purple;
-//     @include desktop{
-//         background: green;
-//     }
-// }

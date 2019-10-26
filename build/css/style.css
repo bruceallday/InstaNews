@@ -177,11 +177,16 @@ section {
       -ms-flex-direction: column;
           flex-direction: column;
   background-size: cover;
+  background-position: center;
   height: 50vh;
   width: 100%;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end; }
+  @media (min-width: 600px) {
+    section {
+      background-position: center;
+      background-size: cover; } }
   section .abstract {
     -ms-flex-item-align: end;
         align-self: flex-end;

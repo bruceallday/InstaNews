@@ -20,7 +20,7 @@ $(function(){
                                                 </div>
                                             </section>`);
 
-                        $("main").append(section).hide().fadeIn(1000)
+                        $("main").append(section).hide().slideDown(1000).fadeIn(500);
                     } 
                 })
             })
