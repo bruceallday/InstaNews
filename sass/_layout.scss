@@ -221,6 +221,7 @@ section{
         font-size: $font-size;
         font-family: $font-family;
         color: $base-font-color;
+        pointer-events:none;
         background: linear-gradient(rgba(0, 0, 0, 0.5),
                                    rgba(0, 0, 0, 0.5));
         p{
