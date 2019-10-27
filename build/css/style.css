@@ -321,7 +321,8 @@ section {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5)));
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); }
     section .abstract p {
-      padding: 10px 5px 10px 5px; }
+      padding: 10px 5px 10px 5px;
+      line-height: 20px; }
 
 footer {
   width: 100%;
@@ -338,12 +339,17 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  @media (min-width: 1240px) {
+    footer {
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start; } }
   footer p {
-    padding-top: 45px;
+    padding: 45px 0px 0px 30px;
     color: #c2c2c2;
     font-size: 16px;
     font-family: "Open-Sans-Light";
-    height: 10vh;
+    height: 8vh;
     text-align: center; }
 
 /*

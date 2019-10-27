@@ -1,10 +1,5 @@
 $(function(){
     $(function(){
-
-        // if ($(window).width() < 768) {
-        //     $(".logo").css()
-        //     $("header").css()
-        // }
        
         $("select").on("change", function(event){
             $selection = $(event.target).val()
