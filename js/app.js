@@ -1,20 +1,27 @@
 $(function(){
     $(function(){
+
+        // if ($(window).width() < 768) {
+        //     $(".logo").css()
+        //     $("header").css()
+        // }
        
         $("select").on("change", function(event){
+            $selection = $(event.target).val()
+
+            if($selection === "") return;
+
             $("section").fadeOut(400);
             $(".loader").removeClass("hidden")
 
             if($(window).width() < 768){
-                $(".logo").addClass(" logoShrinkMobile")
-                $("header").addClass(" headerShrinkMobile")
-
+                $(".logo").addClass(" logoShrinkMo")
+                $("header").addClass(" headerShrinkMo")
+            
             }else if($(window).width() > 767 ){
                 $(".logo").addClass(" logoShrinkTa")
                 $("header").addClass(" headerShrinkTa")
             }
-
-            $selection = $(event.target).val()
 
             $.getJSON(`https://api.nytimes.com/svc/topstories/v2/${$selection}.json?api-key=WU7IFUdwRwP8g4fBGiav2zqEpSm6VlfG`)
             .done(function(data){
@@ -26,7 +33,8 @@ $(function(){
                         console.log(key)
                         console.log(value)
                         const $section = (`
-                                            <a href="${value.short_url}"><section class="newsSection" style="background-image: url(${value.multimedia[4].url});">
+                                            <a href="${value.short_url}"><section class="newsSection" 
+                                                style="background-image: url(${value.multimedia[4].url});">
                                                 <div class="abstract">
                                                     <p>${value.abstract}</p>
                                                 </div>

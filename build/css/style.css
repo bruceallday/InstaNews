@@ -85,7 +85,7 @@ body {
       width: 240px;
       height: 240px; } }
 
-.logoShrinkMobile {
+.logoShrinkMo {
   -webkit-animation: logoShrinkM;
           animation: logoShrinkM;
   -webkit-animation-duration: 1s;
@@ -93,7 +93,7 @@ body {
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards; }
 
-.headerShrinkMobile {
+.headerShrinkMo {
   -webkit-animation: headerShrinkM;
           animation: headerShrinkM;
   -webkit-animation-duration: 1s;
@@ -215,7 +215,7 @@ header {
         -ms-flex-pack: center;
             justify-content: center; }
     header div p {
-      padding: 10px;
+      padding: 10px 0px 15px 0px;
       font-size: 16px;
       font-family: "Open-Sans-Light";
       color: #ffffff;
@@ -334,11 +334,16 @@ footer {
           flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
   footer p {
+    padding-top: 45px;
     color: #c2c2c2;
     font-size: 16px;
     font-family: "Open-Sans-Light";
+    height: 10vh;
     text-align: center; }
 
 /*
