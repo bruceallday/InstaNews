@@ -3,10 +3,15 @@ $(function(){
         $("select").on("change", function(event){
             $("section").fadeOut(400);
             $(".loader").removeClass("hidden")
-            // $(".logo").css("height", "120px", "width", "120px")
-            // $("header").css("height", "30vh")
-            $(".logo").addClass(" logoShrink")
-            $("header").addClass(" headerShrink")
+
+            if($(window).width() < 768){
+                $(".logo").addClass(" logoShrinkMobile")
+                $("header").addClass(" headerShrinkMobile")
+
+            }else if($(window).width() > 768 ){
+                $(".logo").addClass(" logoShrinkTa")
+                $("header").addClass(" headerShrinkTa")
+            
             $selection = $(event.target).val()
 
             $.getJSON(`https://api.nytimes.com/svc/topstories/v2/${$selection}.json?api-key=WU7IFUdwRwP8g4fBGiav2zqEpSm6VlfG`)

@@ -80,50 +80,98 @@ body {
   height: 200px;
   -ms-flex-item-align: center;
       align-self: center; }
+  @media (min-width: 768px) {
+    .logo {
+      width: 240px;
+      height: 240px; } }
 
-.logoShrink {
-  -webkit-animation: logoShrink;
-          animation: logoShrink;
+.logoShrinkMobile {
+  -webkit-animation: logoShrinkM;
+          animation: logoShrinkM;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards; }
 
-.headerShrink {
-  -webkit-animation: headerShrink;
-          animation: headerShrink;
+.headerShrinkMobile {
+  -webkit-animation: headerShrinkM;
+          animation: headerShrinkM;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards; }
 
-@-webkit-keyframes headerShrink {
+.logoShrinkTa {
+  -webkit-animation: logoShrinkT;
+          animation: logoShrinkT;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
+
+.headerShrinkTa {
+  -webkit-animation: headerShrinkT;
+          animation: headerShrinkT;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
+
+@-webkit-keyframes headerShrinkM {
   0% {
     height: 70vh; }
   100% {
     height: 25vh; } }
 
-@keyframes headerShrink {
+@keyframes headerShrinkM {
   0% {
     height: 70vh; }
   100% {
     height: 25vh; } }
 
-@-webkit-keyframes logoShrink {
+@-webkit-keyframes logoShrinkM {
   0% {
     width: 200px;
     height: 200px; }
   100% {
-    width: 120px;
-    height: 120px; } }
+    width: 130px;
+    height: 130px; } }
 
-@keyframes logoShrink {
+@keyframes logoShrinkM {
   0% {
     width: 200px;
     height: 200px; }
   100% {
-    width: 120px;
-    height: 120px; } }
+    width: 130px;
+    height: 130px; } }
+
+@-webkit-keyframes headerShrinkT {
+  0% {
+    height: 70vh; }
+  100% {
+    height: 7vh; } }
+
+@keyframes headerShrinkT {
+  0% {
+    height: 70vh; }
+  100% {
+    height: 7vh; } }
+
+@-webkit-keyframes logoShrinkT {
+  0% {
+    width: 200px;
+    height: 200px; }
+  100% {
+    width: 100px;
+    height: 100px; } }
+
+@keyframes logoShrinkT {
+  0% {
+    width: 200px;
+    height: 200px; }
+  100% {
+    width: 100px;
+    height: 100px; } }
 
 header {
   width: 100%;
