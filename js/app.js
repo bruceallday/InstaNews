@@ -1,5 +1,6 @@
 $(function(){
     $(function(){
+
         $("select").on("change", function(event){
             $("section").fadeOut(400);
             $(".loader").removeClass("hidden")
@@ -11,7 +12,7 @@ $(function(){
             }else if($(window).width() > 768 ){
                 $(".logo").addClass(" logoShrinkTa")
                 $("header").addClass(" headerShrinkTa")
-            
+            }
             $selection = $(event.target).val()
 
             $.getJSON(`https://api.nytimes.com/svc/topstories/v2/${$selection}.json?api-key=WU7IFUdwRwP8g4fBGiav2zqEpSm6VlfG`)
@@ -24,18 +25,37 @@ $(function(){
                         console.log(key)
                         console.log(value)
 
-                        const section = (`
+                        const $section = (`
                                             <section class="newsSection" style="background-image: url(${value.multimedia[4].url});">
                                                 <div class="abstract">
                                                     <p>${value.abstract}</p>
                                                 </div>
                                             </section>
                         `)
-                        $("main").append(section).hide().fadeIn(700)
+                        $(".abstract").slideDown(100);
+                        $("main").append($section).hide().fadeIn(700)
                         $(".loader").addClass(" hidden")
+                        
                     }
+
                 })
+                
+                $("section").mouseover(function(){
+                    $(this).children().slideUp("slow")
+                })
+                $("section").mouseout(function () {
+                    $(this).children().slideDown("slow")
+                })
+
+
             })
+            
+            
         })
+
     })
+
+    
+
 })
+
