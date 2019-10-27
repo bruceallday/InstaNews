@@ -158,10 +158,14 @@ section{
         font-size: $font-size;
         font-family: $font-family;
         color: $base-font-color;
-        padding: 10px;
+        padding: 10px 5px 10px 5px;
+        // height: ;
+        
         background: linear-gradient(rgba(0, 0, 0, 0.5),
                                    rgba(0, 0, 0, 0.5));
-    } 
+       
+    }
+    
 }
 footer{
     width: 100%;
