@@ -1,6 +1,6 @@
 $(function(){
     $(function(){
-        
+       
         $("select").on("change", function(event){
             $("section").fadeOut(400);
             $(".loader").removeClass("hidden")
@@ -26,11 +26,11 @@ $(function(){
                         console.log(key)
                         console.log(value)
                         const $section = (`
-                                            <section class="newsSection" style="background-image: url(${value.multimedia[4].url});">
+                                            <a href="${value.short_url}"><section class="newsSection" style="background-image: url(${value.multimedia[4].url});">
                                                 <div class="abstract">
                                                     <p>${value.abstract}</p>
                                                 </div>
-                                            </section>
+                                            </section></a>
                         `)
 
                         $("main").append($section).hide().fadeIn(700)

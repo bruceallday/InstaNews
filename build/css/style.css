@@ -281,6 +281,9 @@ main {
   @media (min-width: 1240px) {
     main {
       grid-template-columns: 25vw 25vw 25vw 25vw; } }
+  main a {
+    color: inherit;
+    text-decoration: none; }
 
 section {
   display: -webkit-box;
