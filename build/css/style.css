@@ -211,7 +211,11 @@ section {
     section {
       background-size: 100%;
       background-position: center;
-      background-size: cover; } }
+      background-size: cover;
+      height: 40vh; } }
+  @media (min-width: 1240px) {
+    section {
+      height: 50vh; } }
   section .abstract {
     -ms-flex-item-align: end;
         align-self: flex-end;
