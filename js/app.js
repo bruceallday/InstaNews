@@ -3,8 +3,10 @@ $(function(){
         $("select").on("change", function(event){
             $("section").fadeOut(400);
             $(".loader").removeClass("hidden")
+            $(".logo").css("height", "120px", "width", "120px")
+            $("header").css("height", "30vh")
             $selection = $(event.target).val()
-            
+
             $.getJSON(`https://api.nytimes.com/svc/topstories/v2/${$selection}.json?api-key=WU7IFUdwRwP8g4fBGiav2zqEpSm6VlfG`)
             .done(function(data){
                 console.log(data)
