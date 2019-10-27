@@ -277,10 +277,10 @@ main {
   @media (min-width: 768px) {
     main {
       display: grid;
-      grid-template-columns: auto auto auto; } }
+      grid-template-columns: 33vw 33vw 33vw; } }
   @media (min-width: 1240px) {
     main {
-      grid-template-columns: auto auto auto auto; } }
+      grid-template-columns: 25vw 25vw 25vw 25vw; } }
 
 section {
   display: -webkit-box;
@@ -307,14 +307,17 @@ section {
     section {
       height: 50vh; } }
   section .abstract {
+    display: none;
+    width: 100%;
     -ms-flex-item-align: end;
         align-self: flex-end;
     font-size: 16px;
     font-family: "Open-Sans-Light";
     color: #ffffff;
-    padding: 10px 5px 10px 5px;
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5)));
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); }
+    section .abstract p {
+      padding: 10px 5px 10px 5px; }
 
 footer {
   width: 100%;

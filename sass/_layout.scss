@@ -120,6 +120,7 @@ header{
     @include desktop{
         justify-content: flex-start;
     }
+
     width: 100%;
     height: 70vh;
     background-size: 50%;
@@ -181,11 +182,11 @@ header{
 main{
     @include tablet{
         display: grid;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: 33vw 33vw 33vw;
     }
 
     @include desktop{
-        grid-template-columns: auto auto auto auto;
+        grid-template-columns: 25vw 25vw 25vw 25vw;
 
     }
     width: 100%;
@@ -214,15 +215,17 @@ section{
     width: 100%;
     justify-content: flex-end;
     .abstract{
+        display: none;
+        width: 100%;
         align-self: flex-end;
         font-size: $font-size;
         font-family: $font-family;
         color: $base-font-color;
-        padding: 10px 5px 10px 5px;
-        // height: ;
-        
         background: linear-gradient(rgba(0, 0, 0, 0.5),
                                    rgba(0, 0, 0, 0.5));
+        p{
+            padding: 10px 5px 10px 5px;
+        }
     }
 }
 footer{
