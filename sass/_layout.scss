@@ -6,7 +6,7 @@
 }
 
 @mixin tablet{
-    @media (min-width: 600px){
+    @media (min-width: 768px){
         @content;
     }
 }
@@ -47,6 +47,37 @@ body{
     align-self: center;
 }
 
+.logoShrink{
+    animation: logoShrink;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.headerShrink{
+    animation: headerShrink;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes headerShrink{
+    0%{
+        height: 70vh;
+    }100%{
+        height: 25vh;
+    }
+}
+
+@keyframes logoShrink{
+    0%{
+        width: 200px;
+        height: 200px;
+
+    }100%{
+        width: 120px;
+        height: 120px;
+    }
+}
+
 header{
     @include tablet{
             display: flex;
@@ -63,7 +94,7 @@ header{
     flex-direction: column;
     justify-content: center;
     position: relative;
-    margin: 20px 0px 20px 0px;
+    margin: 25px 0px 20px 0px;
 
     div{
         display: flex;
@@ -77,17 +108,12 @@ header{
             text-align: center;
         }
         select{
+            align-self: center;
             background-color: $base-font-color;
             width: 120px;
             border-radius: 5px;
         }
     }
-
-    select{
-        align-self: center;
-        background-color: $base-font-color;
-        width: 150px;
-    } 
 }
 
 .loader{
@@ -132,6 +158,7 @@ main{
     width: 100%;
     display: flex;
     flex-direction: column;
+    margin-top: 20px;
 }
 
 section{
@@ -139,7 +166,7 @@ section{
         background-size: 100%;
         background-position: center;
         background-size: cover;
-        height: 40vh;
+        height: 35vh;
     }
 
     @include desktop{

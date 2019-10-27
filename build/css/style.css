@@ -81,6 +81,50 @@ body {
   -ms-flex-item-align: center;
       align-self: center; }
 
+.logoShrink {
+  -webkit-animation: logoShrink;
+          animation: logoShrink;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
+
+.headerShrink {
+  -webkit-animation: headerShrink;
+          animation: headerShrink;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
+
+@-webkit-keyframes headerShrink {
+  0% {
+    height: 70vh; }
+  100% {
+    height: 25vh; } }
+
+@keyframes headerShrink {
+  0% {
+    height: 70vh; }
+  100% {
+    height: 25vh; } }
+
+@-webkit-keyframes logoShrink {
+  0% {
+    width: 200px;
+    height: 200px; }
+  100% {
+    width: 120px;
+    height: 120px; } }
+
+@keyframes logoShrink {
+  0% {
+    width: 200px;
+    height: 200px; }
+  100% {
+    width: 120px;
+    height: 120px; } }
+
 header {
   width: 100%;
   height: 70vh;
@@ -96,8 +140,8 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  margin: 20px 0px 20px 0px; }
-  @media (min-width: 600px) {
+  margin: 25px 0px 20px 0px; }
+  @media (min-width: 768px) {
     header {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -129,14 +173,11 @@ header {
       color: #ffffff;
       text-align: center; }
     header div select {
+      -ms-flex-item-align: center;
+          align-self: center;
       background-color: #ffffff;
       width: 120px;
       border-radius: 5px; }
-  header select {
-    -ms-flex-item-align: center;
-        align-self: center;
-    background-color: #ffffff;
-    width: 150px; }
 
 .loader {
   position: fixed;
@@ -183,8 +224,9 @@ main {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
-  @media (min-width: 600px) {
+          flex-direction: column;
+  margin-top: 20px; }
+  @media (min-width: 768px) {
     main {
       display: grid;
       grid-template-columns: auto auto auto; } }
@@ -207,12 +249,12 @@ section {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end; }
-  @media (min-width: 600px) {
+  @media (min-width: 768px) {
     section {
       background-size: 100%;
       background-position: center;
       background-size: cover;
-      height: 40vh; } }
+      height: 35vh; } }
   @media (min-width: 1240px) {
     section {
       height: 50vh; } }
