@@ -5,7 +5,7 @@ html{
 
 body{
     @include desktop{
-        // justify-content: center;
+        justify-content: center;
     }
     height: 100vh;
     background-color: black;
@@ -99,7 +99,7 @@ header{
 
     @include desktop{
         justify-content: flex-start;
-
+        height: 20vh;
     }
 
     width: 100%;
@@ -222,7 +222,6 @@ section{
 footer{
     @include desktop{
         justify-content: flex-start;
-        
     }
     width: 100%;
     display: flex;
