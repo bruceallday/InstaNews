@@ -41,17 +41,18 @@ gulp.task("sass", function(){
     ...
 }
 ```
+
 ```javascript
 gulp.task("scripts", function(){
     return gulp
     ...
 }
 ```
+
 ``` javascript
 gulp.task("browser-sync", function(done){
     return gulp
     ...
-
 }
 ```
 
@@ -60,15 +61,16 @@ This was the first time I was introduced to the stylesheet language SASS. I used
 
 Example:<br>
 
-```
-$font-family: 'Open-Sans-Light';
+```$font-family: 'Open-Sans-Light';```
 
+```
 @mixin tablet{
     @media (min-width: 768px){
         @content;
     }
 }
-
+```
+```
 div{
     @include tablet{
         // media query here 
