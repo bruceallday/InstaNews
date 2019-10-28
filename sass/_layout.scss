@@ -128,8 +128,7 @@ header{
             color: $base-font-color;
             width: 120px;
             border-radius: 5px;
-            // cursor: pointer;
-            // cursor: url("../images/quill.cur") auto;
+            cursor: $customCursor, pointer;
         }
     }
 }
@@ -203,6 +202,7 @@ section{
     height: 50vh;
     width: 100%;
     justify-content: flex-end;
+    cursor: $customCursor, pointer;
     .abstract{
         display: none;
         width: 100%;
