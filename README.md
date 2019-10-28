@@ -2,7 +2,7 @@
 
 Responsive Mobile-First News App Using The New York Times API <br>
 
-![]()
+![](instaNewsgif.gif)
 
 ## Preview
 
@@ -16,7 +16,7 @@ run in local server of your choice<br>
 * SASS
 * JQuery
 * JSON
-* API
+* v2 NYT API
 * GULP 
 * Git
 * bash
@@ -37,16 +37,20 @@ Example:<br>
 
 ```javascript
 gulp.task("sass", function(){
+    return gulp
     ...
 }
 ```
 ```javascript
 gulp.task("scripts", function(){
+    return gulp
     ...
 }
 ```
 ``` javascript
 gulp.task("browser-sync", function(done){
+    return gulp
+    ...
 
 }
 ```
@@ -57,20 +61,31 @@ This was the first time I was introduced to the stylesheet language SASS. I used
 Example:<br>
 
 ```
+$font-family: 'Open-Sans-Light';
+
 @mixin tablet{
     @media (min-width: 768px){
         @content;
     }
 }
+
+div{
+    @include tablet{
+        // media query here 
+    }
+}
 ```
 
 ### JSON:
-I was introduced to JSON(JavaScript Object Notation) a lightweight data-interchange format. Linked to the New York Times API, I was able to return real time data and format it accordingly into my webpage.
+I was introduced to JSON(JavaScript Object Notation) a lightweight data-interchange format. Linked to the New York Times API(v2 NYT API), I was able to return real time data and format it accordingly into my webpage.
 
 Example:<br>
 
 ```javascript
 $.getJSON("path/to/Api/mykey")
+.done(function(data)){
+    // Use data here
+}
 ```
 
 ## Environment
