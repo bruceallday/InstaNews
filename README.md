@@ -16,31 +16,62 @@ run in local server of your choice<br>
 * SASS
 * JQuery
 * JSON
-* NewYorkTimes.API
+* API
 * GULP 
 * Git
 * bash
 
 ## Media Querys
 
-* Mobile: 320
-* Tablet: 768
-* Desktop: 1240
+* Mobile: 320 x 568
+* Tablet: 768 x 1024
+* Desktop: 1240 x 1015
 
-### Personal Learnings
+## Personal Learnings
 
-# GULP: Task-runner
+### GULP Task-runner
 I learned how to utilise task-runner ```GULP``` to Automate and streamline my work flow.
-We created a gulp.js file to minify my app.js and streamedline my SASS into pure CSS3 live in a browser sync.  
+We created a gulp.js file to minify my app.js and streamline my SASS into pure CSS3 live in a browser-sync.<br>
 
-# SASS:
-This was the first time I was introduced to the stylesheet language SASS. I learnt how to use SASS variables, nested rules, and mixins to create a more symantic readable stylesheet.
+Example:<br>
 
-# AJAX/JSON:
+```javascript
+gulp.task("sass", function(){
+    ...
+}
+```
+```javascript
+gulp.task("scripts", function(){
+    ...
+}
+```
+``` javascript
+gulp.task("browser-sync", function(done){
 
+}
+```
 
+### SASS:
+This was the first time I was introduced to the stylesheet language SASS. I used SASS variables, nested rules, and mixins to create a more symantic readable stylesheet.
 
-<!-- peronsal -->
+Example:<br>
+
+```
+@mixin tablet{
+    @media (min-width: 768px){
+        @content;
+    }
+}
+```
+
+### JSON:
+I was introduced to JSON(JavaScript Object Notation) a lightweight data-interchange format. Linked to the New York Times API, I was able to return real time data and format it accordingly into my webpage.
+
+Example:<br>
+
+```javascript
+$.getJSON("path/to/Api/mykey")
+```
 
 ## Environment
 
