@@ -1,33 +1,9 @@
-@font-face {
-    font-family: 'Open-Sans-Light';
-    src: url('/fonts/OpenSans-Light.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-}
-
-@mixin tablet{
-    @media (min-width: 768px){
-        @content;
-    }
-}
-
-@mixin desktop{
-    @media (min-width: 1240px){
-        @content;
-    }
-}
-
-$font-family: 'Open-Sans-Light';
-$base-font-color: #ffffff;
-$footer-font-color: #c2c2c2;
-$font-size: 16px;
 
 html{
     height: 100vh;
 }
 
 body{
-
     @include desktop{
         // justify-content: center;
     }
@@ -150,10 +126,10 @@ header{
             align-self: center;
             background-color: black;
             color: $base-font-color;
-            // user-select: none;
             width: 120px;
             border-radius: 5px;
-            cursor: pointer;
+            // cursor: pointer;
+            // cursor: url("../images/quill.cur") auto;
         }
     }
 }

@@ -226,8 +226,7 @@ header {
       background-color: black;
       color: #ffffff;
       width: 120px;
-      border-radius: 5px;
-      cursor: pointer; }
+      border-radius: 5px; }
 
 .loader {
   position: fixed;
