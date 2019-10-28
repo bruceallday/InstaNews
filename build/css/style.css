@@ -223,9 +223,15 @@ header {
     header div select {
       -ms-flex-item-align: center;
           align-self: center;
-      background-color: #ffffff;
+      background-color: black;
+      color: #ffffff;
+      -webkit-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
       width: 120px;
-      border-radius: 5px; }
+      border-radius: 5px;
+      cursor: pointer; }
 
 .loader {
   position: fixed;
@@ -277,7 +283,7 @@ main {
   @media (min-width: 768px) {
     main {
       display: grid;
-      grid-template-columns: 33vw 33vw 33vw; } }
+      grid-template-columns: 33.3vw 33.3vw 33.3vw; } }
   @media (min-width: 1240px) {
     main {
       grid-template-columns: 25vw 25vw 25vw 25vw; } }

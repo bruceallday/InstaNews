@@ -27,6 +27,10 @@ html{
 }
 
 body{
+
+    @include desktop{
+        // justify-content: center;
+    }
     height: 100vh;
     background-color: black;
     display: flex;
@@ -119,6 +123,7 @@ header{
 
     @include desktop{
         justify-content: flex-start;
+
     }
 
     width: 100%;
@@ -143,9 +148,12 @@ header{
         }
         select{
             align-self: center;
-            background-color: $base-font-color;
+            background-color: black;
+            color: $base-font-color;
+            user-select: none;
             width: 120px;
             border-radius: 5px;
+            cursor: pointer;
         }
     }
 }
@@ -182,7 +190,7 @@ header{
 main{
     @include tablet{
         display: grid;
-        grid-template-columns: 33vw 33vw 33vw;
+        grid-template-columns: 33.3vw 33.3vw 33.3vw;
     }
 
     @include desktop{
@@ -238,6 +246,7 @@ section{
 footer{
     @include desktop{
         justify-content: flex-start;
+        
     }
     width: 100%;
     display: flex;
