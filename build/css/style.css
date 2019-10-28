@@ -225,10 +225,6 @@ header {
           align-self: center;
       background-color: black;
       color: #ffffff;
-      -webkit-user-select: none;
-         -moz-user-select: none;
-          -ms-user-select: none;
-              user-select: none;
       width: 120px;
       border-radius: 5px;
       cursor: pointer; }

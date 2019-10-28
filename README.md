@@ -16,18 +16,29 @@ run in local server of your choice<br>
 * SASS
 * JQuery
 * JSON
-* NYT.API
+* NewYorkTimes.API
 * GULP 
 * Git
 * bash
 
 ## Media Querys
 
-* Mobile: 320+
-* Tablet: 768+
-* Desktop: 1240+ 
+* Mobile: 320
+* Tablet: 768
+* Desktop: 1240
 
 ### Personal Learnings
+
+# GULP: Task-runner
+I learned how to utilise task-runner ```GULP``` to Automate and streamline my work flow.
+We created a gulp.js file to minify my app.js and streamedline my SASS into pure CSS3 live in a browser sync.  
+
+# SASS:
+This was the first time I was introduced to the stylesheet language SASS. I learnt how to use SASS variables, nested rules, and mixins to create a more symantic readable stylesheet.
+
+# AJAX/JSON:
+
+
 
 <!-- peronsal -->
 
@@ -39,14 +50,6 @@ run in local server of your choice<br>
 ## Contributing
 
 Please feel free to clone this project, feedback and improvements welcome.
-
-## Authors
-
-* **Bruce Pouncey** - *Initial work* - [BPouncey](https://github.com/BPouncey)
-
-## License
-
-N/A
 
 ## Authors
 * **Bruce Pouncey** - *Initial work* - [BPouncey](https://github.com/BPouncey)
