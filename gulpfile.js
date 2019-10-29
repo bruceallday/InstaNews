@@ -22,7 +22,7 @@ gulp.task("sass", function(){
     .pipe(cssnano())
     .pipe(rename("style.min.css"))
     .pipe(sourcemaps.write("../maps"))
-    .pipe(gulp.dest("./build/css/"))    
+    .pipe(gulp.dest("./build/css/"))
 })
 
 gulp.task("scripts", function(){

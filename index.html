@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="/build/css/style.css">
-    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.11/css/select2.min.css" rel="stylesheet" /> -->
+
+    <link rel="stylesheet" href="//cdn.rawgit.com/thdoan/pretty-dropdowns/master/dist/css/prettydropdowns.css">
     <title>Insta News</title>
 </head>
 <body>
@@ -15,7 +16,7 @@
             <img class="logo" src="/images/nyt-logo.svg" alt="New York Times Logo">
             <div>
                 <p>Choose a section:</p>
-                <select class="" name="" id="">
+                <select style="background-color: black; color: white;"> 
                     <option value="">Sections: ... </option>
                     <option value="home">Home</option>
                     <option value="arts">Arts</option>
@@ -24,13 +25,10 @@
                     <option value="technology">Technology</option>
                     <option value="fashion">Fashion</option>
                 </select>
+            </div>
 
-                <!-- <select name="customSelect" id="customSelect">
-
-                </select> -->
-            </div>    
     </header>
-    
+
     <div class="loader hidden">
         <img src="/images/ajax-loader.gif" alt="Loading">
     </div>
@@ -44,10 +42,10 @@
     </footer> 
 
 </body>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<script src="/build/js/app.min.js" ></script>
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.11/js/select2.min.js"></script> -->
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.11/js/select2.min.js"></script> -->
 
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="/build/js/app.min.js" ></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="//cdn.rawgit.com/thdoan/pretty-dropdowns/master/dist/js/jquery.prettydropdowns.js"></script>
 </html>

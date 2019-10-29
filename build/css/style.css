@@ -172,11 +172,6 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
-  @media (min-width: 1240px) {
-    body {
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center; } }
 
 header {
   width: 100%;
@@ -206,8 +201,7 @@ header {
     header {
       -webkit-box-pack: start;
           -ms-flex-pack: start;
-              justify-content: flex-start;
-      height: 20vh; } }
+              justify-content: flex-start; } }
   header div {
     display: -webkit-box;
     display: -ms-flexbox;

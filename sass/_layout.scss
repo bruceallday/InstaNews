@@ -4,7 +4,7 @@ html{
 
 body{
     @include desktop{
-        justify-content: center;
+        // justify-content: center;
     }
     height: 100vh;
     background-color: black;
@@ -22,7 +22,7 @@ header{
 
     @include desktop{
         justify-content: flex-start;
-        height: 20vh;
+        // height: 20vh;
         }
 
     width: 100%;
@@ -31,7 +31,6 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    // position: relative;
     margin: 25px 0px 20px 0px;
 
     div{
@@ -90,7 +89,7 @@ section{
     width: 100%;
     justify-content: flex-end;
     cursor: $customCursor, pointer;
-    
+
     .abstract{
         display: none;
         width: 100%;
@@ -125,4 +124,3 @@ footer{
         text-align: center;
     }
 }
-
