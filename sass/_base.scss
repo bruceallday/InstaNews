@@ -22,6 +22,75 @@
     }
 }
 
+@keyframes headerShrinkM{
+    0%{
+        height: 70vh;
+    }100%{
+        height: 25vh;
+    }
+}
+
+@keyframes logoShrinkM{
+    0%{
+        width: 200px;
+        height: 200px;
+
+    }100%{
+        width: 130px;
+        height: 130px;
+    }
+}
+
+@keyframes headerShrinkT{
+    0%{
+        height: 70vh;
+    }100%{
+        height: 7vh;
+    }
+}
+
+@keyframes logoShrinkT{
+    0%{
+        width: 200px;
+        height: 200px;
+
+    }100%{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@keyframes fadeOut{
+    100%{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.logoShrinkMo{
+    animation: logoShrinkM;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.headerShrinkMo{
+    animation: headerShrinkM;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.logoShrinkTa{
+    animation: logoShrinkT;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.headerShrinkTa{
+    animation: headerShrinkT;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
 $font-family: 'Open-Sans-Light';
 $base-font-color: #ffffff;
 $footer-font-color: #c2c2c2;

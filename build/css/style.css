@@ -55,73 +55,6 @@ table {
   font-weight: 300;
   font-style: normal; }
 
-html {
-  height: 100vh; }
-
-body {
-  height: 100vh;
-  background-color: black;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-  @media (min-width: 1240px) {
-    body {
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center; } }
-
-.logo {
-  width: 200px;
-  height: 200px;
-  -ms-flex-item-align: center;
-      align-self: center; }
-  @media (min-width: 768px) {
-    .logo {
-      width: 240px;
-      height: 240px; } }
-
-.logoShrinkMo {
-  -webkit-animation: logoShrinkM;
-          animation: logoShrinkM;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards; }
-
-.headerShrinkMo {
-  -webkit-animation: headerShrinkM;
-          animation: headerShrinkM;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards; }
-
-.logoShrinkTa {
-  -webkit-animation: logoShrinkT;
-          animation: logoShrinkT;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards; }
-
-.headerShrinkTa {
-  -webkit-animation: headerShrinkT;
-          animation: headerShrinkT;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards; }
-
 @-webkit-keyframes headerShrinkM {
   0% {
     height: 70vh; }
@@ -178,6 +111,73 @@ body {
     width: 100px;
     height: 100px; } }
 
+@-webkit-keyframes fadeOut {
+  100% {
+    opacity: 0;
+    visibility: hidden; } }
+
+@keyframes fadeOut {
+  100% {
+    opacity: 0;
+    visibility: hidden; } }
+
+.logoShrinkMo {
+  -webkit-animation: logoShrinkM;
+          animation: logoShrinkM;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
+
+.headerShrinkMo {
+  -webkit-animation: headerShrinkM;
+          animation: headerShrinkM;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
+
+.logoShrinkTa {
+  -webkit-animation: logoShrinkT;
+          animation: logoShrinkT;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
+
+.headerShrinkTa {
+  -webkit-animation: headerShrinkT;
+          animation: headerShrinkT;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
+
+html {
+  height: 100vh; }
+
+body {
+  height: 100vh;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  @media (min-width: 1240px) {
+    body {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
+
 header {
   width: 100%;
   height: 70vh;
@@ -192,7 +192,6 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: relative;
   margin: 25px 0px 20px 0px; }
   @media (min-width: 768px) {
     header {
@@ -226,51 +225,6 @@ header {
       font-family: "Open-Sans-Light";
       color: #ffffff;
       text-align: center; }
-    header div select {
-      -ms-flex-item-align: center;
-          align-self: center;
-      background-color: black;
-      color: #ffffff;
-      width: 120px;
-      border-radius: 5px;
-      cursor: url("quill.cur"), pointer; }
-
-.loader {
-  position: fixed;
-  z-index: 99;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 120px; }
-
-.loader > img {
-  width: 100px; }
-
-.loader.hidden {
-  -webkit-animation: fadeOut 1s;
-          animation: fadeOut 1s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards; }
-
-@-webkit-keyframes fadeOut {
-  100% {
-    opacity: 0;
-    visibility: hidden; } }
-
-@keyframes fadeOut {
-  100% {
-    opacity: 0;
-    visibility: hidden; } }
 
 main {
   width: 100%;
@@ -364,3 +318,48 @@ footer {
 /*
     Component: anything reuseable such as buttons, navbars, cards etc
 */
+.loader {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 120px; }
+
+.loader > img {
+  width: 100px; }
+
+.loader.hidden {
+  -webkit-animation: fadeOut 1s;
+          animation: fadeOut 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
+
+.logo {
+  width: 200px;
+  height: 200px;
+  -ms-flex-item-align: center;
+      align-self: center; }
+  @media (min-width: 768px) {
+    .logo {
+      width: 240px;
+      height: 240px; } }
+
+select {
+  -ms-flex-item-align: center;
+      align-self: center;
+  background-color: black;
+  color: #ffffff;
+  width: 120px;
+  border-radius: 5px;
+  cursor: url("quill.cur"), pointer; }

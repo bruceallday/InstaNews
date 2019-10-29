@@ -1,6 +1,8 @@
 $(function(){
     $(function(){
-       
+        // $(".customSelect").select2({
+        //     placeholder: 'select'
+        // });
         $("select").on("change", function(event){
             $selection = $(event.target).val()
             if($selection === "") return;
@@ -40,7 +42,6 @@ $(function(){
 
                         $("main").append($section).hide().fadeIn(700)
                         $(".loader").addClass(" hidden")
-                        
                     }
                 })
 
