@@ -15,9 +15,9 @@ run in local server of your choice<br>
 * CSS3
 * [SASS](https://sass-lang.com/)
 * [JQuery](https://jquery.com/)
-* [JSON]("https://www.json.org/)
+* [JSON](https://www.json.org/)
 * [v2 NYT API](https://developer.nytimes.com/)
-* [GULP]("https://gulpjs.com/docs/en/getting-started/quick-start") 
+* [GULP](https://gulpjs.com/docs/en/getting-started/quick-start) 
 * Git
 * bash
 
