@@ -1,5 +1,8 @@
 $(function(){
 
+    //Custom Select Button using Pretty-Dropdowns: "https://github.com/thdoan/pretty-dropdowns"
+    //Implemented but prefferd my original idea. Uncomment to view.
+
     // $('select').prettyDropdown({
     //     height: 30,
     //     classic: true,
@@ -17,9 +20,6 @@ $(function(){
                 $("header").addClass(" headerShrinkMo")
                 
             }else if($(window).width() > 767 ){
-                // $("body").css("justify-content", "initial")
-                // $("header").css("height", "70h")
-                // $("footer").fadeOut(1);
                 $(".logo").addClass(" logoShrinkTa")
                 $("header").addClass(" headerShrinkTa")
             }
@@ -55,14 +55,13 @@ $(function(){
                 $("section").mouseover(function(){
                     $(this).children().slideDown("fast")
                 })
+
                 $("section").mouseout(function (){
                     $(this).children().slideUp("fast")
                 })
 
             })
-            
         })
-
     })
 })
 

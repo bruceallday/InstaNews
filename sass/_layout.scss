@@ -1,10 +1,10 @@
+
 html{
     height: 100vh;
 }
 
 body{
     @include desktop{
-        // justify-content: center;
     }
     height: 100vh;
     background-color: black;
@@ -15,6 +15,11 @@ body{
 }
 
 header{
+
+    @include mobile{
+        height: 70vh;
+    }
+
     @include tablet{
             display: flex;
             flex-direction: row;
@@ -22,7 +27,6 @@ header{
 
     @include desktop{
         justify-content: flex-start;
-        // height: 20vh;
         }
 
     width: 100%;
@@ -91,6 +95,7 @@ section{
     cursor: $customCursor, pointer;
 
     .abstract{
+
         display: none;
         width: 100%;
         align-self: flex-end;

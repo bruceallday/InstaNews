@@ -45,10 +45,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/*
-    Base: contained within this file is your resets,
-    variables, mixins, and any utility classes
-*/
 @font-face {
   font-family: 'Open-Sans-Light';
   src: url("/fonts/OpenSans-Light.ttf") format("truetype");
@@ -188,6 +184,9 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 25px 0px 20px 0px; }
+  @media (min-width: 340px) {
+    header {
+      height: 70vh; } }
   @media (min-width: 768px) {
     header {
       display: -webkit-box;
@@ -309,9 +308,6 @@ footer {
     height: 8vh;
     text-align: center; }
 
-/*
-    Component: anything reuseable such as buttons, navbars, cards etc
-*/
 .loader {
   position: fixed;
   z-index: 99;
@@ -343,7 +339,8 @@ footer {
   width: 200px;
   height: 200px;
   -ms-flex-item-align: center;
-      align-self: center; }
+      align-self: center;
+  margin-top: 20px; }
   @media (min-width: 768px) {
     .logo {
       width: 240px;
