@@ -1,12 +1,10 @@
 # InstaNews
-
 Responsive Mobile-First News App Using The New York Times API <br>
 
 ![](instaNewsgif.gif)
 
 ## Preview
-
-Clone repository<br>
+Clone project<br>
 
 run in local server of your choice<br>
 
@@ -21,11 +19,14 @@ run in local server of your choice<br>
 * Git
 * bash
 
-## Media Querys
+## Media Query Breakpoints
 
-* Mobile: 320 x 568
-* Tablet: 768 x 1024
-* Desktop: 1240 x 1015
+| Device      | Width         | Height        | 
+|:-----------:|:-------------:|:-------------:|
+| Mobile      | 320           | 568           |  
+| Tablet      | 768           | 1024          |             
+| Desktop     | 1240          | 800           |              
+
 
 ## Personal Learnings
 
@@ -91,16 +92,11 @@ gulp.task("browser-sync", function(done){
 ```
 
 ## Custom menu
-
 ![](customMenu.png)
 
 To add some personal flavour to my page I implemented a [custom cursor](http://www.rw-designer.com/cursor-library), and matched the colour pallet to that of the site.
 
-
 <br>
-
-
-
 
 ## Environment
 * macOS Mojave: 10.14.6
