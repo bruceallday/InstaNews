@@ -27,7 +27,7 @@ $(function(){
             $("section").fadeOut(400);
             $(".loader").removeClass("hidden")
 
-            $.getJSON(`https://api.nytimes.com/svc/topstories/v2/${$selection}.json?api-key=WU7IFUdwRwP8g4fBGiav2zqEpSm6VlfG`)
+            $.getJSON(`https://api.nytimes.com/svc/topstories/v2/${$selection}.json?api-key={YOUR-KEY-HERE}`)
             .done(function(data){
                 let $arrLength = 0;
                 
