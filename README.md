@@ -3,11 +3,6 @@ Responsive Mobile-First News App Using The New York Times API <br>
 
 ![](instaNewsgif.gif)
 
-## Preview
-Clone project<br>
-
-run in local server of your choice<br>
-
 ## Technologies used
 * HTML5
 * CSS3
