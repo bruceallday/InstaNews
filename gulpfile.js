@@ -11,7 +11,7 @@ sourcemaps = require("gulp-sourcemaps"),
 eslint = require("gulp-eslint"),
 browserSync = require("browser-sync")
 
-gulp.task('deploy',['scripts'], function () {
+gulp.task('deploy', function () {
     return gulp.src("./dist/**/*")
         .pipe(deploy())
 });
