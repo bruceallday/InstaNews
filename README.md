@@ -20,7 +20,8 @@ Responsive Mobile-First News App Using The New York Times API <br>
 |:-----------:|:-------------:|:-------------:|
 | Mobile      | 320           | 568           |  
 | Tablet      | 768           | 1024          |             
-| Desktop     | 1240          | 800           |              
+| Desktop     | 1240          | 800           |            
+  
 
 
 ## Personal Learnings
