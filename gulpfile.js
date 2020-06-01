@@ -11,10 +11,12 @@ sourcemaps = require("gulp-sourcemaps"),
 eslint = require("gulp-eslint"),
 browserSync = require("browser-sync")
 
-gulp.task('deploy',["sass", "scripts"], function () {
+gulp.task('deploy',["build"], function () {
     return gulp.src("./dist/**/*")
         .pipe(deploy())
 });
+
+gulp.task('build', ["sass", "scripts"]);
 
 gulp.task("sass", function(){
     return gulp
