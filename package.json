@@ -10,7 +10,8 @@
     "IE 10"
   ],
   "scripts": {
-    "start": "gulp"
+    "start": "gulp deploy",
+    "deploy": "gulp deploy"
   },
   "devDependencies": {
     "browser-sync": "^2.26.7",

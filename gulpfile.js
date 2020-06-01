@@ -1,5 +1,5 @@
 const gulp = require('gulp');
-const terser = require("gulp-terser"),
+const terser = require("gulp-terser");
 const deploy = require('gulp-gh-pages');
 
 rename = require("gulp-rename"),
@@ -11,7 +11,7 @@ sourcemaps = require("gulp-sourcemaps"),
 eslint = require("gulp-eslint"),
 browserSync = require("browser-sync")
 
-gulp.task('deploy', ['build'] , function () {
+gulp.task('deploy', function () {
     return gulp.src("./dist/**/*")
         .pipe(deploy())
 });
