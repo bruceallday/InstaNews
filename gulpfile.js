@@ -47,10 +47,10 @@ gulp.task("images", function(){
         .pipe(gulp.dest('./build/images'))
 })
 
-// gulp.task("fonts", function () {
-//     return gulp.src('./fonts/**/*')
-//         .pipe(gulp.dest('./build/fonts'))
-// })
+gulp.task("fonts", function () {
+    return gulp.src('./fonts/*')
+        .pipe(gulp.dest('./build/fonts'))
+})
 
 gulp.task("browser-sync", function(done){
     browserSync.init({
