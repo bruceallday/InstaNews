@@ -30,7 +30,7 @@ gulp.task("sass", function(){
     .pipe(cssnano())
     .pipe(rename("style.min.css"))
     .pipe(sourcemaps.write("../maps"))
-    .pipe(gulp.dest("./build/css/"))
+    .pipe(gulp.dest("./build/css"))
 })
 
 gulp.task("scripts", function(){
@@ -49,7 +49,7 @@ gulp.task("images", function(){
 
 gulp.task("fonts", function () {
     return gulp.src('./fonts/*')
-        .pipe(gulp.dest('./build/fonts/'))
+        .pipe(gulp.dest('./build/fonts'))
 })
 
 gulp.task("browser-sync", function(done){
