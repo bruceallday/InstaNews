@@ -10,7 +10,7 @@
     "IE 10"
   ],
   "scripts": {
-    "start": "deploy",
+    "start": "gulp deploy",
     "deploy": "deploy"
   },
   "devDependencies": {
