@@ -16,7 +16,7 @@ gulp.task('deploy',["build"], function () {
         .pipe(deploy())
 });
 
-gulp.task('build', ["sass", "scripts", "images"]);
+gulp.task('build', ["sass", "scripts", "images", "fonts"]);
 
 gulp.task("sass", function(){
     return gulp
@@ -49,7 +49,7 @@ gulp.task("images", function(){
 
 gulp.task("fonts", function () {
     return gulp.src('./fonts/*')
-        .pipe(gulp.dest('./build/fonts'))
+        .pipe(gulp.dest('./build/fonts/'))
 })
 
 gulp.task("browser-sync", function(done){
