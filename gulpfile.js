@@ -12,7 +12,7 @@ eslint = require("gulp-eslint"),
 browserSync = require("browser-sync")
 
 gulp.task('deploy', function () {
-    return gulp.src("./dist/**/*")
+    return gulp.src("./build/**/*")
         .pipe(deploy())
 });
 
