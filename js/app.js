@@ -12,7 +12,7 @@ $(function(){
             }
             $("section").fadeOut(400);
             $(".loader").removeClass("hidden")
-            $.getJSON(`https://api.nytimes.com/svc/topstories/v2/` + `${$selection}` + `.json?api-key={WU7IFUdwRwP8g4fBGiav2zqEpSm6VlfG}`)
+            $.getJSON(`https://api.nytimes.com/svc/topstories/v2/` + `${$selection}` + `.json?api-key=WU7IFUdwRwP8g4fBGiav2zqEpSm6VlfG`)
             .done(function(data){
                 console.log("data", data)
                 let $arrLength = 0;
@@ -21,7 +21,7 @@ $(function(){
                         $arrLength += 1;
                         const $section = (`
                             <a href="${value.short_url}"><section class="newsSection" 
-                                style="background-image: url(${value.multimedia[4].url});">
+                                style="background-image: url(${value.multimedia[0].url});">
                                 <div class="abstract">
                                     <p>${value.abstract}</p>
                                 </div>
