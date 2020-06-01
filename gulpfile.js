@@ -16,7 +16,7 @@ gulp.task('deploy',["build"], function () {
         .pipe(deploy())
 });
 
-gulp.task('build', ["sass", "scripts"]);
+gulp.task('build', ["sass", "scripts", "images"]);
 
 gulp.task("sass", function(){
     return gulp
@@ -39,6 +39,12 @@ gulp.task("scripts", function(){
     .pipe(terser())
     .pipe(rename({extname: ".min.js"}))
     .pipe(gulp.dest("./build/js"))
+})
+
+gulp.task("images", function(){
+    return gulp.src('./images/**/*.+(png|jpg|gif|svg)')
+        .pipe(imagemin())
+        .pipe(gulp.dest('./build/images'))
 })
 
 gulp.task("browser-sync", function(done){
