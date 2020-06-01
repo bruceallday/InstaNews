@@ -1,6 +1,6 @@
 const gulp = require('gulp');
 const terser = require("gulp-terser"),
-var deploy = require('gulp-gh-pages');
+const deploy = require('gulp-gh-pages');
 
 rename = require("gulp-rename"),
 sass = require("gulp-sass"),
