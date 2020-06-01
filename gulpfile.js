@@ -1,5 +1,6 @@
 const gulp = require('gulp');
 const terser = require("gulp-terser"),
+var deploy = require('gulp-gh-pages');
 
 rename = require("gulp-rename"),
 sass = require("gulp-sass"),
@@ -9,6 +10,11 @@ cssnano = require("gulp-cssnano"),
 sourcemaps = require("gulp-sourcemaps"),
 eslint = require("gulp-eslint"),
 browserSync = require("browser-sync")
+
+gulp.task('deploy', ['build'] , function () {
+    return gulp.src("./dist/**/*")
+        .pipe(deploy())
+});
 
 gulp.task("sass", function(){
     return gulp
