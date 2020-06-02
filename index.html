@@ -4,19 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./build/css/style.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="//cdn.rawgit.com/thdoan/pretty-dropdowns/master/dist/css/prettydropdowns.css">
     <title>Insta News</title>
 </head>
 <body>
-
     <header>
         <img class="logo" src="./images/nyt-logo.svg" alt="New York Times Logo">
         <div>
             <p>Choose a section:</p>
-            <select style="background-color: black; color: white;"> 
+            <select style="background-color: black; color: white; border: 'none';"> 
                 <option value="">Sections: ... </option>
                 <option value="home">Home</option>
                 <option value="arts">Arts</option>
@@ -26,21 +24,16 @@
                 <option value="fashion">Fashion</option>
             </select>
         </div>
-
     </header>
-
     <div class="loader hidden">
         <img src="./images/ajax-loader.gif" alt="Loading">
     </div>
-
     <main>
         <!-- news section will append here -->
     </main>
-    
     <footer>
         <p> © Copywrite 2019 INSTANEWS</p>
     </footer> 
-
 </body>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
