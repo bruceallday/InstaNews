@@ -210,7 +210,7 @@ header {
     header div p {
       padding: 10px 0px 15px 0px;
       font-size: 16px;
-      font-family: "Open-Sans-Light";
+      font-family: 'Open Sans', sans-serif;
       color: #ffffff;
       text-align: center; }
 
@@ -266,7 +266,7 @@ section {
     -ms-flex-item-align: end;
         align-self: flex-end;
     font-size: 16px;
-    font-family: "Open-Sans-Light";
+     font-family: 'Open Sans', sans-serif;
     color: #ffffff;
     pointer-events: none;
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5)));
@@ -299,7 +299,7 @@ footer {
     padding: 45px 0px 0px 30px;
     color: #c2c2c2;
     font-size: 16px;
-    font-family: "Open-Sans-Light";
+    font-family: 'Open Sans', sans-serif;
     height: 8vh;
     text-align: center; }
 
