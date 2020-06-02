@@ -9,10 +9,10 @@
     "> 1%",
     "IE 10"
   ],
-  "scripts": {
-    "start": "gulp deploy",
-    "deploy": "deploy"
-  },
+  // "scripts": {
+  //   "start": "gulp deploy",
+  //   "deploy": "deploy"
+  // },
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "gulp-autoprefixer": "^7.0.1",

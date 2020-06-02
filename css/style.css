@@ -60,30 +60,7 @@ table {
     Layout: containes all the css that handles the layout,
     such at the container and any grid system
 */
-@font-face {
-  font-family: "Open-Sans-bold-italic";
-  src: url("../fonts/OpenSans-BoldItalic.ttf") format("truetype");
-  font-weight: bold;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Open-Sans-Light";
-  src: url("../fonts/OpenSans-Light.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Open-Sans-Light-Italic";
-  src: url("../fonts/OpenSansLight-Italic.ttf") format("truetype");
-  font-weight: 300;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Open-Sans-Bold";
-  src: url("../fonts/OpenSans-Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-}
+/*  */
 html {
   height: 100vh;
 }
@@ -109,7 +86,7 @@ header {
 header p {
   padding: 10px;
   font-size: 16px;
-  font-family: "Open-Sans-Light";
+  font-family: 'Open Sans', sans-serif;
   color: #ffffff;
   text-align: center;
 }
@@ -136,7 +113,7 @@ section {
 section .abstract {
   align-self: flex-end;
   font-size: 16px;
-  font-family: "Open-Sans-Light";
+  font-family: 'Open Sans', sans-serif;
   color: #ffffff;
   padding: 10px;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
@@ -152,7 +129,7 @@ footer {
 footer p {
   color: #c2c2c2;
   font-size: 16px;
-  font-family: "Open-Sans-Light";
+ font-family: 'Open Sans', sans-serif;
   text-align: center;
 }
 

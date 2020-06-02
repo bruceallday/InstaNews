@@ -45,11 +45,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-@font-face {
-  font-family: 'Open-Sans-Light';
-  src: url("./OpenSans-Light.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal; }
 
 @-webkit-keyframes headerShrinkM {
   0% {
