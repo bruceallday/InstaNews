@@ -12,9 +12,9 @@ $(function(){
             }
             $("section").fadeOut(400);
             $(".loader").removeClass("hidden")
-            $.getJSON(`https://api.nytimes.com/svc/topstories/v2/`+`${$selection}`+`.json?api-key=WU7IFUdwRwP8g4fBGiav2zqEpSm6VlfG`)
+            $.getJSON(`https://api.nytimes.com/svc/topstories/v2/`+
+            `${$selection}`+`.json?api-key=WU7IFUdwRwP8g4fBGiav2zqEpSm6VlfG`)
             .done(function(data){
-                console.log("data", data)
                 let $arrLength = 0;
                 $.each(data.results, function(key, value){
                     if(value.multimedia.length !==0 && $arrLength < 12){
